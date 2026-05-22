@@ -1,0 +1,7 @@
+# Python 3.12 is recommended.
+torch>=2.0
+torchvision>=0.15
+numpy>=1.26
+Pillow>=10.0
+lpips>=0.1.4
+dists-pytorch>=0.1
