@@ -43,6 +43,12 @@ Put the inference checkpoint at:
 ckpt/checkpoint.pth.tar
 ```
 
+## Pretrained Checkpoints
+
+You can download the pretrained inference checkpoint for **EF-LIC** from the following link:
+
+* **[Download checkpoint.pth.tar]([YOUR_DOWNLOAD_LINK_HERE](https://drive.google.com/file/d/1XrfmdUx0nFFBg9_ToVzz-A2jFZ5qiGR6/view?usp=sharing))**
+
 ## Test on Kodak
 
 Default paths:
