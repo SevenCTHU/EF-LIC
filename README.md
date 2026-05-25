@@ -2,7 +2,16 @@
 
 Official inference code for **EF-LIC**, a multi-rate learned image compression model without entropy coding.
 
-**Paper:** 
+## 📝 Abstract
+
+Entropy coding is widely used in typical learned image compression (LIC) that converts latents into a compact bitstream.
+However, entropy coding is typically sequential and becomes the coding latency bottleneck.
+To overcome it, we present Entropy-Coding Free Learned Image Compression (EF-LIC), a multi-rate framework that generates compact representation by removing statistical and correlation redundancy with low coding latency.
+First, we introduce unconstrained vector quantization and prove that its index distribution approaches the maximum-entropy bound, yielding minimal statistical redundancy.
+Second, we propose a context-conditioned autoregressive transform that directly reparameterizes the latents to reduce inter-dependency.
+Theoretical analysis shows that EF-LIC can remove correlation redundancy as effectively as typical LIC with entropy coding, leading to comparable compression performance.
+Experiments show EF-LIC achieves up to 67.86\% bitrate reduction over MS-ILLM on Kodak with LPIPS.
+Ablation studies further show EF-LIC matches the compression performance of its entropy-coding based variant while achieving over $3\times$ faster encoding and $5\times$ faster decoding.
 
 ## Repository layout
 
@@ -47,7 +56,7 @@ ckpt/checkpoint.pth.tar
 
 You can download the pretrained inference checkpoint for **EF-LIC** from the following link:
 
-* **[Download checkpoint.pth.tar](https://drive.google.com/file/d/1XrfmdUx0nFFBg9_ToVzz-A2jFZ5qiGR6/view?usp=sharing)**
+* **[Download checkpoint here.](https://drive.google.com/file/d/1XrfmdUx0nFFBg9_ToVzz-A2jFZ5qiGR6/view?usp=sharing)**
 
 ## Test on Kodak
 
@@ -75,8 +84,13 @@ After each rate point, it prints the average result over the image folder.
 
 ## Performance & Rate-Distortion Curves
 
+Rate-distortion-perception comparison on benchmarks:
 <p align="center">
   <img src="pic/result.svg" alt="Rate-Distortion Performance Curves" width="800">
+</p>
+
+<p align="center">
+  <img src="pic/result.svg" alt="Visualization Results" width="800">
 </p>
 
 
