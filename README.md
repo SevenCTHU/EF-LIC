@@ -1,5 +1,8 @@
 # EF-LIC: Efficient Learned Image Compression without Entropy Coding
 
+[![ArXiv](https://img.shields.io/badge/arXiv-2605.23323-b31b1b.svg)](https://arxiv.org/abs/2605.23323)
+[![ICML](https://img.shields.io/badge/ICML-2026-4b44ce.svg)](https://icml.cc/virtual/2026/poster/61207)
+
 Official inference code for **EF-LIC**, a multi-rate learned image compression model without entropy coding.
 
 ## 📝 Abstract
@@ -10,7 +13,7 @@ To overcome it, we present Entropy-Coding Free Learned Image Compression (EF-LIC
 First, we introduce unconstrained vector quantization and prove that its index distribution approaches the maximum-entropy bound, yielding minimal statistical redundancy.
 Second, we propose a context-conditioned autoregressive transform that directly reparameterizes the latents to reduce inter-dependency.
 Theoretical analysis shows that EF-LIC can remove correlation redundancy as effectively as typical LIC with entropy coding, leading to comparable compression performance.
-Experiments show EF-LIC achieves up to 67.86\% bitrate reduction over MS-ILLM on Kodak with LPIPS.
+Experiments show EF-LIC achieves up to 67.86% bitrate reduction over MS-ILLM on Kodak with LPIPS.
 Ablation studies further show EF-LIC matches the compression performance of its entropy-coding based variant while achieving over $3\times$ faster encoding and $5\times$ faster decoding.
 
 ## Repository layout
@@ -32,8 +35,8 @@ Ablation studies further show EF-LIC matches the compression performance of its 
 Python 3.12 is recommended. PyTorch should be newer than 2.0.
 
 ```bash
-conda create -n $your_env_name$ python=3.12 -y
-conda activate $your_env_name$
+conda create -n <your_env_name> python=3.12 -y
+conda activate <your_env_name>
 pip install torch torchvision
 pip install -r requirements.txt
 ```
@@ -82,7 +85,9 @@ Enc (ms) | Dec (ms) | PSNR | LPIPS | DISTS | BPP
 
 After each rate point, it prints the average result over the image folder.
 
-## Performance & Rate-Distortion Curves
+## Performance Evaluation
+
+### Performance & Rate-Distortion Curves
 
 Rate-distortion-perception comparison on benchmarks:
 <p align="center">
@@ -90,10 +95,8 @@ Rate-distortion-perception comparison on benchmarks:
 </p>
 
 <p align="center">
-  <img src="pic/result.svg" alt="Visualization Results" width="800">
+  <img src="pic/show.svg" alt="Visualization Results" width="800">
 </p>
-
-
 
 ## Speed & Engineering Optimizations
 
@@ -125,9 +128,24 @@ For more granular benchmarking, here is the average latency of this repository a
 ## Citation
 
 ```bibtex
-@inproceedings{eflic2026,
-  title     = {Efficient Learned Image Compression without Entropy Coding},
-  booktitle = {International Conference on Machine Learning},
-  year      = {2026}
+@misc{cao2026efficient,
+  title         = {Efficient Learned Image Compression without Entropy Coding},
+  author        = {Cao, Hao and Guo, Wenqi and Qin, Zhijin and Han, Jungong},
+  year          = {2026},
+  eprint        = {2605.23323},
+  archivePrefix = {arXiv},
+  primaryClass  = {eess.IV},
+  doi           = {10.48550/arXiv.2605.23323},
+  url           = {https://arxiv.org/abs/2605.23323}
 }
 ```
+
+## 🥰 Acknowledgement
+
+This work is implemented based on [DCVC-RT](https://github.com/microsoft/DCVC). Thanks for their awesome work!
+
+## :envelope: Contact
+
+If you have any questions, please feel free to drop me an email: 
+
+- caoh24[at]mails.tsinghua.edu.cn
