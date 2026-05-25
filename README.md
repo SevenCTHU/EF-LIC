@@ -128,15 +128,11 @@ For more granular benchmarking, here is the average latency of this repository a
 ## Citation
 
 ```bibtex
-@misc{cao2026efficient,
-  title         = {Efficient Learned Image Compression without Entropy Coding},
-  author        = {Cao, Hao and Guo, Wenqi and Qin, Zhijin and Han, Jungong},
-  year          = {2026},
-  eprint        = {2605.23323},
-  archivePrefix = {arXiv},
-  primaryClass  = {eess.IV},
-  doi           = {10.48550/arXiv.2605.23323},
-  url           = {https://arxiv.org/abs/2605.23323}
+@article{cao2026efficient,
+    title     = {Efficient Learned Image Compression without Entropy Coding},
+    author    = {Cao, Hao and Guo, Wenqi and Qin, Zhijin and Han, Jungong},
+    journal   = {arXiv preprint arXiv:2605.23323},
+    year      = {2026}
 }
 ```
 
