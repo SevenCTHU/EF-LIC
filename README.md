@@ -1,4 +1,4 @@
-# EF-LIC: Efficient Learned Image Compression without Entropy Coding
+# Efficient Learned Image Compression without Entropy Coding
 
 [![ArXiv](https://img.shields.io/badge/arXiv-2605.23323-b31b1b.svg)](https://arxiv.org/abs/2605.23323)
 [![ICML](https://img.shields.io/badge/ICML-2026-4b44ce.svg)](https://icml.cc/virtual/2026/poster/61207)
