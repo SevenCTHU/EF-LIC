@@ -138,7 +138,7 @@ For more granular benchmarking, here is the average latency of this repository a
 
 ## License
 
-This project is licensed under the **Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License (CC BY-NC-ND 4.0)**.
+This project is licensed under the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License (CC BY-NC-ND 4.0).
 
 See the [LICENSE](LICENSE) file for details.
 
